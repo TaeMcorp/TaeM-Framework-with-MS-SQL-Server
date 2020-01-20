@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{A7BDEA7A-C6EA-4F96-A06E-060B073349B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{26F29616-42D6-4B4F-B7B7-ADA47DD7EE4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{1A4D09CB-4E75-471C-B232-3108C89D7991}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{DE264523-58BD-4F18-8BE6-EE444483C82C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{545B1F50-6C22-4695-A0CA-FBAF1DFDBFA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{0F02B738-25C7-4873-B8A1-33D1FE9BB9A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memberships.Entity", "Entities\Memberships.Entity\Memberships.Entity.csproj", "{0BF7BC24-906C-47FC-B573-85AC1E631DBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stored procedure", "Stored procedure", "{0DEB9385-3AD6-4B35-A703-0A3C56A93145}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Table creation", "Table creation", "{A0CC0D92-C29D-438C-93AB-2C84F301F8A4}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Table creation\Create_Table_Queries.sql = Database\Table creation\Create_Table_Queries.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Member", "Member", "{E9103533-446D-45F7-B5A6-13494D365F15}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Stored procedure\Member\sp_Memberships_Delete_Member_By_MemberID.sql = Database\Stored procedure\Member\sp_Memberships_Delete_Member_By_MemberID.sql
+		Database\Stored procedure\Member\sp_Memberships_Insert_Member.sql = Database\Stored procedure\Member\sp_Memberships_Insert_Member.sql
+		Database\Stored procedure\Member\sp_Memberships_Select_Member_By_MemberID.sql = Database\Stored procedure\Member\sp_Memberships_Select_Member_By_MemberID.sql
+		Database\Stored procedure\Member\sp_Memberships_Select_Members_By_MemberName.sql = Database\Stored procedure\Member\sp_Memberships_Select_Members_By_MemberName.sql
+		Database\Stored procedure\Member\sp_Memberships_Select_Num_Of_Members_By_MemberName.sql = Database\Stored procedure\Member\sp_Memberships_Select_Num_Of_Members_By_MemberName.sql
+		Database\Stored procedure\Member\sp_Memberships_Update_Member.sql = Database\Stored procedure\Member\sp_Memberships_Update_Member.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MemberHistory", "MemberHistory", "{70DBB153-1B5C-4112-B135-B601054919E5}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Stored procedure\MemberHistory\sp_Memberships_Insert_MemberHistory.sql = Database\Stored procedure\MemberHistory\sp_Memberships_Insert_MemberHistory.sql
+		Database\Stored procedure\MemberHistory\sp_Memberships_Select_MemberHistory_By_FromToDate.sql = Database\Stored procedure\MemberHistory\sp_Memberships_Select_MemberHistory_By_FromToDate.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memberships.DataAccess", "DataAccess\Memberships.DataAccess\Memberships.DataAccess.csproj", "{CDCB4E3D-68D8-4B4F-A1AD-BBDA8609F26C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memberships.Business", "Business\Memberships.Business\Memberships.Business.csproj", "{943DFD0E-F8A2-430E-A7F9-91E05C57CEB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memberships.Console", "Clients\Memberships.Console\Memberships.Console.csproj", "{188D4F3B-8D3F-4201-A53E-B919EDC9A7E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memberships.WebAPI", "API\Memberships.WebAPI\Memberships.WebAPI.csproj", "{FAB17360-F02D-4AED-86FD-527B0B70F809}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BF7BC24-906C-47FC-B573-85AC1E631DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF7BC24-906C-47FC-B573-85AC1E631DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF7BC24-906C-47FC-B573-85AC1E631DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF7BC24-906C-47FC-B573-85AC1E631DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCB4E3D-68D8-4B4F-A1AD-BBDA8609F26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCB4E3D-68D8-4B4F-A1AD-BBDA8609F26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCB4E3D-68D8-4B4F-A1AD-BBDA8609F26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCB4E3D-68D8-4B4F-A1AD-BBDA8609F26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943DFD0E-F8A2-430E-A7F9-91E05C57CEB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943DFD0E-F8A2-430E-A7F9-91E05C57CEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943DFD0E-F8A2-430E-A7F9-91E05C57CEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943DFD0E-F8A2-430E-A7F9-91E05C57CEB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{188D4F3B-8D3F-4201-A53E-B919EDC9A7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188D4F3B-8D3F-4201-A53E-B919EDC9A7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188D4F3B-8D3F-4201-A53E-B919EDC9A7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188D4F3B-8D3F-4201-A53E-B919EDC9A7E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB17360-F02D-4AED-86FD-527B0B70F809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB17360-F02D-4AED-86FD-527B0B70F809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB17360-F02D-4AED-86FD-527B0B70F809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB17360-F02D-4AED-86FD-527B0B70F809}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0BF7BC24-906C-47FC-B573-85AC1E631DBD} = {A7BDEA7A-C6EA-4F96-A06E-060B073349B3}
+		{0DEB9385-3AD6-4B35-A703-0A3C56A93145} = {0F02B738-25C7-4873-B8A1-33D1FE9BB9A2}
+		{A0CC0D92-C29D-438C-93AB-2C84F301F8A4} = {0F02B738-25C7-4873-B8A1-33D1FE9BB9A2}
+		{E9103533-446D-45F7-B5A6-13494D365F15} = {0DEB9385-3AD6-4B35-A703-0A3C56A93145}
+		{70DBB153-1B5C-4112-B135-B601054919E5} = {0DEB9385-3AD6-4B35-A703-0A3C56A93145}
+		{CDCB4E3D-68D8-4B4F-A1AD-BBDA8609F26C} = {545B1F50-6C22-4695-A0CA-FBAF1DFDBFA1}
+		{943DFD0E-F8A2-430E-A7F9-91E05C57CEB1} = {1A4D09CB-4E75-471C-B232-3108C89D7991}
+		{188D4F3B-8D3F-4201-A53E-B919EDC9A7E4} = {DE264523-58BD-4F18-8BE6-EE444483C82C}
+		{FAB17360-F02D-4AED-86FD-527B0B70F809} = {26F29616-42D6-4B4F-B7B7-ADA47DD7EE4E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A88AF170-AA29-4926-A2D9-ACE9AD00D7F3}
+	EndGlobalSection
+EndGlobal

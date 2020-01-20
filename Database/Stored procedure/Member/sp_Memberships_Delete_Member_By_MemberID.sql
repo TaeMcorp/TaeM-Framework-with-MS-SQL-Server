@@ -1,0 +1,10 @@
+CREATE PROCEDURE [dbo].[sp_Memberships_Delete_Member_By_MemberID]
+	@MemberID int
+AS
+	SET NOCOUNT OFF;
+	SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+	DELETE FROM dbo.Member
+	WHERE MemberID = @MemberID
+	
+RETURN
